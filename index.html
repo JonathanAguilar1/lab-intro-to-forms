@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro-To-Forms-Lab</title>
+</head>
+<body>
+    <!-- Header -->
+    <h1>Payment Form</h1>
+    <!-- Can write down a Plain Paragraph -->
+    <p>Required fields are marked by *</p>
+    <!-- Create a Container for a Set of Form Controls -->
+    <form> 
+    <!-- Provide Descriptions or Labels for the form controls. -->
+        <label>
+            <!-- Define a Container for a Group of Related Form Controls,  its purpose is to structure the form. -->
+            <fieldset>
+                <!-- to provide a title or label for the group of form controls -->
+                <legend>Contact Information</legend>
+              Mx.
+              <!-- <br> used to insert a line break, DOES NOT REQUIRE A CLOSING TAG -->
+              <br>
+              <!-- various types of form controls that allow users to input data or make selections on a web page -->
+              <!-- <input type="radio"> creates a radio button, which allows users to select one option from a list of mutually exclusive choices. -->
+              <input type="radio" name="prefix" id="Mx" checked>
+              <br>
+              Mr.
+              <br>
+              <input type="radio" name="prefix" id="Mr." >
+              <br>
+              Mrs.
+              <br>
+              <input type="radio" name="prefix" id="Mrs.">
+              <br>
+              Name
+              <br>
+              <input type="text" id="name" required>
+              <br>
+              Email
+              <br><input type="text" id="email" required>
+            </fieldset>
+        </label>
+        <label >
+            <fieldset>
+                <legend>Payment Information</legend>
+                <!-- <select>  Used to Create a Dropdown List, Often Used When You Want To Provide There Users With a Selection of Choices in a User-Friendly and Space-Efficent Manner -->
+                <select name="catagory" id="post-category">
+                    <!-- <option> Represents An Individual Choice in the List. -->
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+                <br>
+                Credit Card Number
+                <br>
+                <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
+                <br>
+                Experation Date
+                <br>
+                <input type="text" id="expiration-date" required>
+            </fieldset>
+            <button type="submit">Submit Payment</button>
+        </label>
+    </form>
+</body>
+</html>
